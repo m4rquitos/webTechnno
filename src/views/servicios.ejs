@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("partials/head.ejs")%>
+    <title><%- title%></title>
+</head>
+<body class="bg-dark">
+
+    <style>
+        .info {
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+
+        .info h2 {
+            color: tomato;
+            font-size: 4em;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .info p {
+            font-size: 1.2em;
+        }
+        section{
+            height: fit-content;   
+        }
+        section ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+        }
+        section ul li{
+            list-style: none;
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: .3em 1.5em;
+            border-radius: 10px;
+            background-color: rgb(35, 35, 35);
+            color: white;
+            box-shadow: 0 0 10px grey;
+        }
+        
+    </style>
+    <main>
+        <%- include("partials/navbar.ejs")%>
+
+        <section>
+            <img src="servicios.png" alt="img_mision" width="500px">
+            <div class="info">
+                <h2 class="text-primary">Servicios</h2>
+                <p class="text-white">En InnovateTech Solutions, ofrecemos una amplia gama de servicios tecnológicos diseñados para
+                    satisfacer tus necesidades específicas
+                    Desde el desarrollo de aplicaciones web y móviles hasta el diseño de interfaces de usuario,
+                    estamos preparados para enfrentar cualquier desafío tecnológico. </p>
+            </div>
+        </section>
+
+        <section style="flex-direction: column;">
+            <h2 class="text-primary fw-bold" style="font-size: 5em; margin-bottom: .5em;">Algunos Servicios</h2>
+            <ul>
+                <li class="bg-primary text-white">Desarrollo de software a medida</li>
+                <li class="bg-primary text-white">Diseño y desarrollo web</li>
+                <li class="bg-primary text-white">Desarrollo de aplicaciones móviles</li>
+                <li class="bg-primary text-white">Consultoría tecnológica</li>
+                <li class="bg-primary text-white">Integración de sistemas</li>
+                <li class="bg-primary text-white">Diseño de interfaces de usuario (UI/UX)</li>
+                <li class="bg-primary text-white">Servicios de análisis de datos</li>
+                <li class="bg-primary text-white">Seguridad y protección de datos</li>
+                
+            </ul>
+        </section>
+
+        <%- include("partials/footer.ejs")%>
+
+    </main>
+</body>
+<%- include("partials/script.ejs")%>
+</html>

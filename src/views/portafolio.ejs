@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("partials/head.ejs")%>
+        <title><%- title%></title>
+</head>
+
+<body class="bg-dark">
+
+    <style>
+        .info {
+            height: 100%;
+            max-width: 700px;
+            min-width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 5%;
+        }
+
+        .info h2 {
+            color: tomato;
+            font-size: 4em;
+            font-weight: bold;
+            justify-content: center;
+            width: 100%;
+            text-align: left;
+        }
+
+        .info p {
+            font-size: 1.2em;
+        }    
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap !important;
+        }
+    </style>
+
+    <main>
+        <%- include("partials/navbar.ejs")%>
+
+            <section>
+                <div class="info">
+                    <h2 class="fw-bold text-primary">Portafolio de proyectos</h2>
+                    <p class="text-white">Nuestro portafolio de proyectos muestra nuestra experiencia y el impacto que hemos tenido en
+                        diversas industrias. Hemos trabajado con empresas de diferentes tamaños y sectores, brindándoles
+                        soluciones tecnológicas a medida que han mejorado su eficiencia operativa y su presencia en
+                        línea. Estos son algunos de nuestros proyectos destacados.</p>
+                </div>
+                <img src="portafolio.png" alt="img_mision" width="400px">
+            </section>
+
+            <section class="cards">
+                <div class="card bg-primary text-white p-2" style="width: 18rem;">
+                    <img src="img01.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white"><b>Proyecto Comercial</b></h5>
+                    </div>
+                    <ul class="list-group list-group-flush bg-primary text-white">
+                        <li class="list-group-item bg-primary text-white text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-primary text-white">Creatividad</li>
+                        <li class="list-group-item bg-primary text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+                <div class="card bg-primary text-white p-2" style="width: 18rem;">
+                    <img src="img02.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white"><b>Aplicacion Movil</b></h5>
+                    </div>
+                    <ul class="list-group list-group-flush bg-primary text-white">
+                        <li class="list-group-item bg-primary text-white text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-primary text-white">Creatividad</li>
+                        <li class="list-group-item bg-primary text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+                <div class="card bg-primary text-white p-2" style="width: 18rem;">
+                    <img src="img03.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white"><b>Inventario</b></h5>
+                    </div>
+                    <ul class="list-group list-group-flush bg-primary text-white">
+                        <li class="list-group-item bg-primary text-white text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-primary text-white">Creatividad</li>
+                        <li class="list-group-item bg-primary text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+                <div class="card bg-primary text-white p-2" style="width: 18rem;">
+                    <img src="img04.png" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white"><b>Web App</b></h5>
+                    </div>
+                    <ul class="list-group list-group-flush bg-primary text-white">
+                        <li class="list-group-item bg-primary text-white text-white">Diseño UX/UI</li>
+                        <li class="list-group-item bg-primary text-white">Creatividad</li>
+                        <li class="list-group-item bg-primary text-white">Lógica</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link Page</a>
+                    </div>
+                </div>
+            </section>
+
+            <%- include("partials/footer.ejs")%>
+
+    </main>
+</body>
+<%- include("partials/script.ejs")%>
+
+</html>

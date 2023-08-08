@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs')%>
+    <link rel="stylesheet" href="main.css">
+    <title><%- title%></title>
+</head>
+<body class="bg-dark">
+
+    <style>
+        section{
+            flex-direction: column;
+            gap: 2em;
+        }
+        .testimonio{
+            min-width: 380px;
+            max-width: 640px;
+            border-radius: 20px;
+            padding: 1em;
+        }
+        b{
+            font-size: 1.3em;
+        }
+    </style>
+    
+    <main>
+        <%- include('partials/navbar.ejs')%>
+
+        <section>
+            <h1 class="fw-bold text-primary">Testimonios</h1>
+            <div class="testimonio bg-primary bg-gradient text-black">
+                <blockquote>
+                    "La colaboración con InnovateTech Solutions ha sido excepcional. Han superado nuestras
+                    expectativas en términos de calidad, tiempo de entrega y atención al cliente."
+                    <br>
+                    - <b>Empresa ABC</b>
+                </blockquote>
+            </div>
+            <div class="testimonio bg-primary bg-gradient text-black">
+                <blockquote>
+                    "El equipo de InnovateTech Solutions comprendió perfectamente nuestras necesidades y nos brindó
+                    una solución personalizada que ha mejorado nuestra eficiencia operativa de manera
+                    significativa". 
+                    <br>- <b>Empresa ABC</b>
+                </blockquote>
+            </div>
+            <div class="testimonio bg-primary bg-gradient text-black">
+                <blockquote>
+                    "Recomendaría a InnovateTech Solutions a cualquier empresa que busque soluciones tecnológicas de
+                    vanguardia. Su enfoque en la innovación y la calidad es impresionante". <br>- <b>Empresa ABC</b>
+                </blockquote>
+            </div>
+        </section>
+
+        <%- include('partials/footer.ejs')%>
+
+    </main>
+
+</body>
+<%- include('partials/script.ejs')%>
+</html>

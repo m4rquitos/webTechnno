@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("partials/head.ejs")%>
+    <title><%- title%></title>
+</head>
+<body class="bg-dark">
+    <main>
+        <%- include("partials/navbar.ejs")%>
+
+        <section id="sect-01">
+            <div class="left" >
+                <img src="mision.png" width="500px" alt="">
+            </div>
+            <div class="right">
+                <h1 class="fw-bold text-primary">Misión</h1>
+                <p class="text-white" >Nuestra misión es ofrecer soluciones tecnológicas innovadoras que impulsen el crecimiento y la transformación digital de nuestros clientes. Nos comprometemos a brindar productos y servicios de calidad que satisfagan las necesidades de manera efectiva y eficiente.</p>
+            </div>
+        </section>
+        <section id="sect-02">
+            <div class="left" >
+                <h1 class="fw-bold text-primary">Visión</h1>
+                <p class="text-white">Ser reconocidos como líderes en el sector tecnológico, destacando por nuestra excelencia en la entrega de soluciones personalizadas y nuestra capacidad para adaptarnos y abrazar las últimas tendencias tecnológicas. Aspiramos a establecer relaciones duraderas con nuestros clientes, basadas en la confianza y el éxito mu tuo.</p>
+            </div>
+            <div class="right">
+                <img src="vision.png" width="600px" alt="">
+            </div>
+        </section>
+
+        <%- include("partials/footer.ejs")%>
+    </main>
+</body>
+<%- include("partials/script.ejs")%>
+</html>

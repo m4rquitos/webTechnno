@@ -1,0 +1,110 @@
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    color: antiquewhite !important;
+    width: 100vw;
+}
+
+section{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+    gap: 1em;
+}
+
+section p{
+    max-width: 50vw;
+    min-width: 20rem;
+    text-align: justify;
+    font-size: 1.3em;
+}
+section h1{
+    font-size: 6em;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    section{
+        flex-direction: column;
+    }
+    section img{
+        width: 90%;
+    }
+    footer .redes{
+        display: none;
+    }
+    footer .form{
+        display: none;
+    }
+
+}
+
+footer{
+    width: 100vw;
+    height: 45vh;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    animation: footerAnimate 2s;
+}
+footer .img{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+footer i{
+    color: antiquewhite;
+}
+footer i span{
+    color: antiquewhite;
+}
+footer .redes i{
+    cursor: pointer;
+    font-size: 2em;
+}
+footer .redes h2{
+    margin-bottom: 1em;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+footer form input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4em;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+footer form button{
+    background-color: rgb(226, 136, 136);
+    outline: none;
+    border: none;
+    font-size: 1.4em;
+    color: rgb(31, 31, 31);
+    font-weight: bold;
+    transition: all .5s;
+}
+footer form button:hover{
+    background-color: antiquewhite;
+    color: rgb(31, 31, 31);
+    box-shadow: 0 0 5px antiquewhite;
+}
+@keyframes footerAnimate {
+    0%{ opacity: 0; }
+    100%{ opacity: 100; }
+}
